@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Checkbox Preference -->
+    <CheckBoxPreference
+        android:key="checkbox_preference"
+        android:title="Enable Feature"
+        android:summary="Check to enable the feature"
+        android:defaultValue="false" />
+
+    <!-- EditText Preference -->
+    <EditTextPreference
+        android:key="edittext_preference"
+        android:title="Username"
+        android:summary="Enter your username"
+        android:dialogTitle="Enter your username"
+        android:defaultValue=""
+        android:inputType="text" />
+
+    <!-- List Preference -->
+    <ListPreference
+        android:key="list_preference"
+        android:title="Language"
+        android:summary="Select your preferred language"
+        android:entries="@array/language_options"
+        android:entryValues="@array/language_values"
+        android:defaultValue="en" />
+
+    <!-- SeekBar Preference -->
+    <SeekBarPreference
+        android:key="seekbar_preference"
+        android:title="Volume"
+        android:summary="Adjust the volume"
+        android:dialogTitle="Adjust volume"
+        android:defaultValue="50"
+        android:max="100" />
+
+</PreferenceScreen>
